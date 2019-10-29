@@ -1,0 +1,18 @@
+name: Publish to rubygems
+on:
+  push
+jobs:
+  publish-gem:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-ruby@v1
+      - run: |
+          mkdir ~/.gem
+          echo -e "---\r\n:rubygems_api_key: $RUBYGEMS_API_KEY" > ~/.gem/credentials
+          chmod 0600 ~/.gem/credentials
+        env:
+          RUBYGEMS_API_KEY: ${{rubygems_api_key}}
+      - run: |
+          gem build rubocop-able.gemspec
+          gem push rubocop-able
