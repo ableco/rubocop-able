@@ -15,4 +15,4 @@ jobs:
           RUBYGEMS_API_KEY: ${{secrets.rubygems_api_key}}
       - run: |
           gem build rubocop-able.gemspec
-          gem push rubocop-able
+          gem push rubocop-able-*.gem
