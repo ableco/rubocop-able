@@ -1,6 +1,7 @@
 name: Publish to rubygems
 on:
-  push
+  release:
+    types: [published]
 jobs:
   publish-gem:
     runs-on: ubuntu-latest
