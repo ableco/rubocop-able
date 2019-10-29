@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Gem::Specification.new do |spec|
-  spec.name        = "rubocop-github"
+  spec.name        = "rubocop-able"
   spec.version     = "0.1.0"
   spec.authors     = "Able"
   spec.email       = "engineering@able.co"
