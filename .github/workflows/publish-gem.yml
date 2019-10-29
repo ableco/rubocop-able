@@ -12,7 +12,7 @@ jobs:
           echo -e "---\r\n:rubygems_api_key: $RUBYGEMS_API_KEY" > ~/.gem/credentials
           chmod 0600 ~/.gem/credentials
         env:
-          RUBYGEMS_API_KEY: ${{rubygems_api_key}}
+          RUBYGEMS_API_KEY: ${{secrets.rubygems_api_key}}
       - run: |
           gem build rubocop-able.gemspec
           gem push rubocop-able
