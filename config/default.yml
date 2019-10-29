@@ -102,6 +102,10 @@ Lint/UnusedBlockArgument:
 Lint/UnusedMethodArgument:
   Enabled: true
 
+Metrics/LineLength:
+  Max: 80
+  IgnoredPatterns: [(\A|\s)#]
+
 Naming/VariableName:
   EnforcedStyle: snake_case
 
@@ -116,6 +120,9 @@ Style/EmptyElse:
 
 Style/EmptyMethod:
   EnforcedStyle: expanded
+
+Style/GlobalVars:
+  AllowedVariables: ["$rollout"]
 
 Style/HashSyntax:
   EnforcedStyle: ruby19_no_mixed_keys
