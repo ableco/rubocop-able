@@ -1,0 +1,16 @@
+require: rubocop-rails
+
+Rails/LexicallyScopedActionFilter:
+  Enabled: false
+  Include:
+    - app/controllers/**/*.rb
+
+Rails/TimeZone:
+  EnforcedStyle: flexible
+
+Rails/UnknownEnv:
+  Environments:
+    - development
+    - test
+    - production
+    - staging
