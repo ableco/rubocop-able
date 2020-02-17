@@ -1,3 +1,4 @@
+require: rubocop-rails
 AllCops:
   Exclude:
     - bin/**/*
@@ -160,3 +161,18 @@ Style/TrailingCommaInArrayLiteral:
 
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: no_comma
+
+Rails/LexicallyScopedActionFilter:
+  Enabled: false
+  Include:
+    - app/controllers/**/*.rb
+
+Rails/TimeZone:
+  EnforcedStyle: flexible
+
+Rails/UnknownEnv:
+  Environments:
+    - development
+    - test
+    - production
+    - staging
