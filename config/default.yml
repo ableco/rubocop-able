@@ -9,11 +9,32 @@ AllCops:
     - db/schema.rb
   DisabledByDefault: true
 
+Bundler/DuplicatedGem:
+  Enabled: true
+
+Bundler/InsecureProtocolSource:
+  Enabled: true
+
 Layout/AccessModifierIndentation:
   EnforcedStyle: indent
 
+Layout/ArgumentAlignment:
+  Enabled: true
+
+Layout/ArrayAlignment:
+  Enabled: true
+
+Layout/BeginEndAlignment:
+  Enabled: true
+
 Layout/BlockAlignment:
-  EnforcedStyleAlignWith: either
+  Enabled: true
+
+Layout/BlockEndNewline:
+  Enabled: true
+
+Layout/ClosingParenthesisIndentation:
+  Enabled: true
 
 Layout/DefEndAlignment:
   EnforcedStyleAlignWith: start_of_line
@@ -27,6 +48,9 @@ Layout/EmptyComment:
 Layout/EmptyLineBetweenDefs:
   Enabled: true
   NumberOfEmptyLines: 1
+
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
 
 Layout/EmptyLinesAroundBlockBody:
   EnforcedStyle: no_empty_lines
@@ -43,23 +67,65 @@ Layout/EndAlignment:
 Layout/ExtraSpacing:
   AllowForAlignment: true
 
-Layout/IndentFirstArrayElement:
+Layout/FirstArgumentIndentation:
+  Enabled: true
+
+Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
 
-Layout/IndentFirstHashElement:
+Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
+
+Layout/FirstParameterIndentation:
+  Enabled: true
+
+Layout/HashAlignment:
+  Enabled: true
 
 Layout/IndentationConsistency:
   EnforcedStyle: normal
 
+Layout/IndentationStyle:
+  Enabled: true
+
 Layout/IndentationWidth:
+  Enabled: true
   Width: 2
+
+Layout/LineLength:
+  IgnoredPatterns: [(\A|\s)#]
+  Max: 100
+
+Layout/MultilineArrayLineBreaks:
+  Enabled: true
+
+Layout/MultilineBlockLayout:
+  Enabled: true
+
+Layout/MultilineHashBraceLayout:
+  Enabled: true
+
+Layout/MultilineHashKeyLineBreaks:
+  Enabled: true
+
+Layout/MultilineMethodArgumentLineBreaks:
+  Enabled: true
+
+Layout/MultilineMethodCallIndentation:
+  Enabled: true
+  EnforcedStyle: indented_relative_to_receiver
+
+Layout/ParameterAlignment:
+  Enabled: true
 
 Layout/SpaceAroundBlockParameters:
   EnforcedStyleInsidePipes: no_space
 
 Layout/SpaceAroundEqualsInParameterDefault:
   EnforcedStyle: space
+
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
 
 Layout/SpaceAroundOperators:
   Enabled: true
@@ -84,16 +150,76 @@ Layout/SpaceInsideReferenceBrackets:
 Layout/SpaceInsideStringInterpolation:
   EnforcedStyle: no_space
 
-Layout/Tab:
+Layout/TrailingEmptyLines:
   Enabled: true
 
 Layout/TrailingWhitespace:
   Enabled: true
 
+Lint/BinaryOperatorWithIdenticalOperands:
+  Enabled: true
+
+Lint/ConstantDefinitionInBlock:
+  Enabled: true
+
+Lint/Debugger:
+  Enabled: true
+
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
+
+Lint/DuplicateElsifCondition:
+  Enabled: true
+
+Lint/DuplicateRequire:
+  Enabled: true
+
+Lint/DuplicateRescueException:
+  Enabled: true
+
+Lint/EmptyConditionalBody:
+  Enabled: true
+
+Lint/EmptyFile:
+  Enabled: true
+
+Lint/FloatComparison:
+  Enabled: true
+
+Lint/IdentityComparison:
+  Enabled: true
+
+Lint/MissingSuper:
+  Enabled: true
+
+Lint/MixedRegexpCaptureTypes:
+  Enabled: true
+
+Lint/OutOfRangeRegexpRef:
+  Enabled: true
+
+Lint/RaiseException:
+  Enabled: true
+
 Lint/SafeNavigationChain:
   Enabled: true
 
+Lint/SelfAssignment:
+  Enabled: true
+
 Lint/ShadowedArgument:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
+Lint/TopLevelReturnWithArgument:
+  Enabled: true
+
+Lint/TrailingCommaInAttributeDeclaration:
+  Enabled: true
+
+Lint/UnreachableLoop:
   Enabled: true
 
 Lint/UnusedBlockArgument:
@@ -102,18 +228,35 @@ Lint/UnusedBlockArgument:
 Lint/UnusedMethodArgument:
   Enabled: true
 
-Metrics/LineLength:
-  Max: 100
-  IgnoredPatterns: [(\A|\s)#]
+Lint/UselessMethodDefinition:
+  Enabled: true
+
+Naming/PredicateName:
+  Enabled: true
 
 Naming/VariableName:
   EnforcedStyle: snake_case
 
-Style/BlockDelimiters:
-  EnforcedStyle: line_count_based
+Style/AccessorGrouping:
+  Enabled: true
 
-Style/BracesAroundHashParameters:
-  EnforcedStyle: no_braces
+Style/ArrayCoercion:
+  Enabled: true
+
+Style/BisectedAttrAccessor:
+  Enabled: true
+
+Style/BlockDelimiters:
+  Enabled: true
+
+Style/CaseLikeIf:
+  Enabled: true
+
+Style/CombinableLoops:
+  Enabled: true
+
+Style/DateTime:
+  Enabled: true
 
 Style/EmptyElse:
   EnforcedStyle: both
@@ -121,11 +264,41 @@ Style/EmptyElse:
 Style/EmptyMethod:
   EnforcedStyle: expanded
 
+Style/ExplicitBlockArgument:
+  Enabled: true
+
+Style/ExponentialNotation:
+  Enabled: true
+
+Style/GlobalStdStream:
+  Enabled: true
+
 Style/GlobalVars:
   AllowedVariables: ["$rollout"]
 
+Style/HashAsLastArrayItem:
+  Enabled: true
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashLikeCase:
+  Enabled: true
+
 Style/HashSyntax:
   EnforcedStyle: ruby19_no_mixed_keys
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
+
+Style/IfUnlessModifier:
+  Enabled: true
+
+Style/KeywordParametersOrder:
+  Enabled: true
 
 Style/MethodDefParentheses:
   EnforcedStyle: require_parentheses
@@ -134,17 +307,53 @@ Style/NumericLiterals:
   MinDigits: 5
   Strict: false
 
+Style/NumericPredicate:
+  Enabled: true
+
+Style/OptionalBooleanParameter:
+  Enabled: true
+
+Style/RedundantAssignment:
+  Enabled: true
+
+Style/RedundantFetchBlock:
+  Enabled: true
+
+Style/RedundantFileExtensionInRequire:
+  Enabled: true
+
+Style/RedundantRegexpCharacterClass:
+  Enabled: true
+
+Style/RedundantRegexpEscape:
+  Enabled: true
+
 Style/RedundantReturn:
+  Enabled: true
+
+Style/RedundantSelfAssignment:
   Enabled: true
 
 Style/Semicolon:
   Enabled: true
 
+Style/SingleArgumentDig:
+  Enabled: true
+
 Style/SingleLineMethods:
+  Enabled: true
+
+Style/SlicingWithRange:
+  Enabled: true
+
+Style/SoleNestedConditional:
   Enabled: true
 
 Style/StabbyLambdaParentheses:
   EnforcedStyle: require_parentheses
+
+Style/StringConcatenation:
+  Enabled: true
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
