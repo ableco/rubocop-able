@@ -1,9 +1,17 @@
 require: rubocop-rails
 
-Rails/LexicallyScopedActionFilter:
-  Enabled: false
-  Include:
-    - app/controllers/**/*.rb
+Rails/FindBy:
+  Enabled: true
+
+Rails/HttpStatus:
+  Enabled: true
+
+Rails/Pluck:
+  Enabled: true
+
+Rails/PluckInWhere:
+  Enabled: true
+  EnforcedStyle: aggressive
 
 Rails/TimeZone:
   EnforcedStyle: flexible
