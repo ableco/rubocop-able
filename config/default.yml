@@ -231,11 +231,17 @@ Lint/UnusedMethodArgument:
 Lint/UselessMethodDefinition:
   Enabled: true
 
+Lint/DuplicateBranch:
+  Enabled: true
+
 Naming/PredicateName:
   Enabled: true
 
 Naming/VariableName:
   EnforcedStyle: snake_case
+
+Naming/InclusiveLanguage:
+  Enabled: true
 
 Style/AccessorGrouping:
   Enabled: true
@@ -369,3 +375,12 @@ Style/TrailingCommaInArrayLiteral:
 
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: no_comma
+
+Style/RedundantInterpolation:
+  Enabled: true
+
+Style/RedundantBegin:
+  Enabled: true
+
+Style/ClassEqualityComparison:
+  Enabled: true
