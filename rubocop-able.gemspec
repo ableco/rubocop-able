@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name        = "rubocop-able"
-  spec.version     = "0.2.3"
+  spec.version     = "0.2.4"
   spec.authors     = "Able"
   spec.email       = "engineering@able.co"
 
@@ -13,6 +13,6 @@ Gem::Specification.new do |spec|
 
   spec.files       = Dir["README.md", "LICENSE", "config/*.yml"]
 
-  spec.add_dependency "rubocop", "~> 1.18"
-  spec.add_dependency "rubocop-rails", "~> 2.8.1"
+  spec.add_dependency "rubocop", "~> 1.28.2"
+  spec.add_dependency "rubocop-rails", "~> 2.14.2"
 end

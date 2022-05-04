@@ -21,7 +21,7 @@ inherit_gem:
     - config/rails.yml
 
 AllCops:
-  TargetRubyVersion: 2.5
+  TargetRubyVersion: 3.0.4
 ```
 
 ## Contributing
